@@ -23,13 +23,15 @@
             <fieldset>
                 <div class="fieldset-wrapper">
                     <legend>Informações pessoais</legend>
-                    <div class="input-wrapper">
-                        <label for="event-name">Nome</label>
-                        <input type="text" id="event-name">
-                    </div>
-                    <div class="input-wrapper">
-                        <label for="event-lastName">E-mail</label>
-                        <input type="text" id="event-name">
+                    <div class="col-2">
+                        <div class="input-wrapper">
+                            <label for="event-name">Nome</label>
+                            <input type="text" id="event-name">
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="event-lastName">Sobrenome</label>
+                            <input type="text" id="event-name">
+                        </div>
                     </div>
                     <div class="input-wrapper">
                         <label for="event-email">Email <span>(digite um email válido)</span></label>
@@ -42,57 +44,62 @@
                 </div>
             </fieldset>
 
-            <!--<fieldset>
-                <div class="fieldset-event">
+            <fieldset>
+                <div class="fieldset-wrapper">
                     <legend>Informações do mentor</legend>
-                    <div class="input-wrapper">
-                        <label for="event-name-mentor">Nome do seu mentor <span>(só o primeiro nome)</span></label>
-                        <input type="text" id="event-name-mentor">
-                    </div>
+                        <div class="input-wrapper">
+                            <label for="event-name-mentor">Nome do seu mentor <span>(só o primeiro nome)</span></label>
+                            <input type="text" id="event-name-mentor">
+                        </div>
                 </div>
             </fieldset>
 
             <fieldset>
-                <div class="fieldset-event">
+                <div class="fieldset-wrapper">
                     <legend>Seus horários disponíveis</legend>
-                    <div class="input-wrapper">
-                        <legend>Primeira mentoria</legend> 
-                        <label for="event-date">Data <span>(DD/MM/AAAA)</span></label>
-                        <input type="date" id="event-date">
-                    </div>
-                    <div class="input-wrapper">
-                        <label for="event-begin">Das</label>
-                        <input type="time" id="event-begin">
-                    </div>
-                    <div class="input-wrapper">
-                        <label for="event-end">Até</label>
-                        <input type="time" id="event-end">
+                    <p>Primeira mentoria</p> 
+                    <div class="col-3">
+                        <div class="input-wrapper">
+                            <label for="event-date">Data <span>(DD/MM/AAAA)</span></label>
+                            <input type="text" id="event-date-1" onfocus="(this.type = 'date')" placeholder="">
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="event-begin">Das</label>
+                            <input type="text" id="event-begin" onfocus="(this.type = 'time')" placeholder="">
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="event-end">Até</label>
+                            <input type="text" id="event-end" onfocus="(this.type = 'time')" placeholder="">
+                        </div>
                     </div>
                 </div>
             </fieldset>
 
             <fieldset>
                 <div class="fieldset-event">
-                    <legend>Segunda mentoria</legend>
-                    <div class="input-wrapper">
-                        <legend>Primeira mentoria</legend> 
-                        <label for="event-date">Data <span>(DD/MM/AAAA)</span></label>
-                        <input type="date" id="event-date">
-                    </div>
-                    <div class="input-wrapper">
-                        <label for="event-begin">Das</label>
-                        <input type="time" id="event-begin">
-                    </div>
-                    <div class="input-wrapper">
-                        <label for="event-end">Até</label>
-                        <input type="time" id="event-end">
+                    <p>Segunda mentoria</p>
+                    <div class="col-3">
+                        <div class="input-wrapper">
+                            <label for="event-date">Data <span>(DD/MM/AAAA)</span></label>
+                            <input type="text" id="event-date" onfocus="(this.type = 'date')" placeholder="">
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="event-begin">Das</label>
+                            <input type="text" id="event-begin" onfocus="(this.type = 'time')" placeholder="">
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="event-end">Até</label>
+                            <input type="text" id="event-end" onfocus="(this.type = 'time')" placeholder="">
+                        </div>
                     </div>
                 </div>
-            </fieldset>-->
+            </fieldset>
         </form>
-        <!--<footer>
-            <input class="button" type="submit" form="form" value="Salvar">
-        </footer>-->
+        <footer>
+            <div class="button">
+                <input type="submit" form="form" value="Salvar">
+            </div>
+        </footer>
     </div>
 </body>
 </html>
